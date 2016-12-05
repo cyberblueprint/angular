@@ -1,0 +1,3 @@
+REMEMBER THE MILK:
+- directives: HTML tags including Templates
+- <input ng-model="<model>.key" type="text" /> 

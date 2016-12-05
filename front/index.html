@@ -8,8 +8,8 @@
 </head>
 <body ng-app=ang>
     <input ng-model="person.name" type="text">
-    <div>
-        <h1>{{"Hi " + person.name}}</h1>
-    </div>
+    <div ng-controller="firstCtrl">
+        <h1 ng-click="sayHi()">{{"Hi " + person.name}}</h1>
+    </div> 
 </body>
 </html>
