@@ -7,9 +7,12 @@
     <script src="scripts/app.js"></script>
 </head>
 <body ng-app=ang>
-    <input ng-model="person.name" type="text">
     <div ng-controller="firstCtrl">
-        <h1 ng-click="sayHi()">{{"Hi " + person.name}}</h1>
-    </div> 
+        <input ng-model="name" type="text">
+        <button ng-click="addGreeting()">Add Greeting</button>
+        <ul>
+            <li ng-repeat="thepersonsname in person track by $index">{{"Hi " + thepersonsname}}</li>
+        </ul>
+    </div>
 </body>
 </html>
